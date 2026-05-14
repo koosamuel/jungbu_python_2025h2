@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5bf195236f7f42a77e241a2ebd2ab537 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5bf195236f7f42a77e241a2ebd2ab537" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5bf195236f7f42a77e241a2ebd2ab537 = L.map(
+                "map_5bf195236f7f42a77e241a2ebd2ab537",
+                {
+                    center: [37.56678, 126.9782],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1fa5b878127737201a2ac3232edfa874 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1fa5b878127737201a2ac3232edfa874.addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            var marker_950511058b250adec8b74b35bf91fd63 = L.marker(
+                [37.592573, 127.046737],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_950511058b250adec8b74b35bf91fd63.bindTooltip(
+                `<div>
+                     KAIST 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6e3d1f11362116353e157f38d95bf99 = L.marker(
+                [37.5483449, 126.8547974],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_a6e3d1f11362116353e157f38d95bf99.bindTooltip(
+                `<div>
+                     KC대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3687c0176dd354a4efcac2ad11b498e5 = L.marker(
+                [37.5859218, 127.0043275],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_3687c0176dd354a4efcac2ad11b498e5.bindTooltip(
+                `<div>
+                     가톨릭대학교(성신교정)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0e37b3513fdd0d2f975c1b1e364b236 = L.marker(
+                [37.4996227, 127.0060653],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_c0e37b3513fdd0d2f975c1b1e364b236.bindTooltip(
+                `<div>
+                     가톨릭대학교(성의교정)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bec255d664c38dd9ccf2a072aa946b6e = L.marker(
+                [37.5676455, 126.96161],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_bec255d664c38dd9ccf2a072aa946b6e.bindTooltip(
+                `<div>
+                     감리교신학대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_baf9684626a483dfe4b46315137332cd = L.marker(
+                [37.5407625, 127.0793428],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_baf9684626a483dfe4b46315137332cd.bindTooltip(
+                `<div>
+                     건국대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_575ca4897ef4ce7f916564730fd3ee3e = L.marker(
+                [37.300485, 127.035833],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_575ca4897ef4ce7f916564730fd3ee3e.bindTooltip(
+                `<div>
+                     경기대학교 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a9cd1557125e264ef9ec664c12e3902 = L.marker(
+                [37.5961951, 127.052544],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_5a9cd1557125e264ef9ec664c12e3902.bindTooltip(
+                `<div>
+                     경희대학교 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c25fe31041b5fc327a82001ede143a8 = L.marker(
+                [37.5907, 127.0277],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_6c25fe31041b5fc327a82001ede143a8.bindTooltip(
+                `<div>
+                     고려대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2a7acc107428ee4e3004075d79e9c191 = L.marker(
+                [37.6194965, 127.0596958],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_2a7acc107428ee4e3004075d79e9c191.bindTooltip(
+                `<div>
+                     광운대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b94f22c722f389fc753aef46ba56314 = L.marker(
+                [37.6096409, 126.997697],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_6b94f22c722f389fc753aef46ba56314.bindTooltip(
+                `<div>
+                     국민대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e516fdee20d914ca2a08b23c1a87107c = L.marker(
+                [37.6511988, 127.0161604],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_e516fdee20d914ca2a08b23c1a87107c.bindTooltip(
+                `<div>
+                     덕성여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77c079c835aec64c11b8714ab69d4825 = L.marker(
+                [37.5574771, 127.0020518],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_77c079c835aec64c11b8714ab69d4825.bindTooltip(
+                `<div>
+                     동국대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1131e08bf6374de10b104995d70401ac = L.marker(
+                [37.6063202, 127.041808],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_1131e08bf6374de10b104995d70401ac.bindTooltip(
+                `<div>
+                     동덕여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b17973f2a74f8d6c985b517396bcf012 = L.marker(
+                [37.5802046, 126.9234451],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_b17973f2a74f8d6c985b517396bcf012.bindTooltip(
+                `<div>
+                     명지대학교 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2822ebc7c51def695670b695b700ec70 = L.marker(
+                [37.6429515, 127.1054757],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_2822ebc7c51def695670b695b700ec70.bindTooltip(
+                `<div>
+                     삼육대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a97f723a87908b448b003db89464953 = L.marker(
+                [37.602638, 126.955252],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_0a97f723a87908b448b003db89464953.bindTooltip(
+                `<div>
+                     상명대학교 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_feda1c1af3aabc730aff4cd392b59a11 = L.marker(
+                [37.5509442, 126.9410023],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_feda1c1af3aabc730aff4cd392b59a11.bindTooltip(
+                `<div>
+                     서강대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_731901433ed9a259f8497f69f92993b5 = L.marker(
+                [37.615095, 127.0131113],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_731901433ed9a259f8497f69f92993b5.bindTooltip(
+                `<div>
+                     서경대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48149864ed9abaf3b134116a4ab69e1e = L.marker(
+                [37.6316684, 127.0774813],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_48149864ed9abaf3b134116a4ab69e1e.bindTooltip(
+                `<div>
+                     서울과학기술대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bdd85a4f5ea05356ad9ae5f30b888cf = L.marker(
+                [37.4899615, 127.0164124],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_8bdd85a4f5ea05356ad9ae5f30b888cf.bindTooltip(
+                `<div>
+                     서울교육대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c47f49901ab9c851e3e33baaffa9096a = L.marker(
+                [37.6009228, 126.9123818],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_c47f49901ab9c851e3e33baaffa9096a.bindTooltip(
+                `<div>
+                     서울기독대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e1965a2abcb1ae410eeba3848e1434b = L.marker(
+                [37.459882, 126.9519053],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_5e1965a2abcb1ae410eeba3848e1434b.bindTooltip(
+                `<div>
+                     서울대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e16978d93576606718d64e0a0c01ba4 = L.marker(
+                [37.5838657, 127.0587771],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_5e16978d93576606718d64e0a0c01ba4.bindTooltip(
+                `<div>
+                     서울시립대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb3be3573272ef5a47d9ff60b1930f1a = L.marker(
+                [37.6281126, 127.0904568],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_fb3be3573272ef5a47d9ff60b1930f1a.bindTooltip(
+                `<div>
+                     서울여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_01ab6560a564922008952f395571c6ed = L.marker(
+                [37.4965411, 126.8512616],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_01ab6560a564922008952f395571c6ed.bindTooltip(
+                `<div>
+                     서울한영대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f5aa397b4e486ad0958cdf9586de97f = L.marker(
+                [37.4872325, 126.8253202],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_4f5aa397b4e486ad0958cdf9586de97f.bindTooltip(
+                `<div>
+                     성공회대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b7623c245ab6501c994f15f7bcd9fbb = L.marker(
+                [37.588227, 126.993606],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_5b7623c245ab6501c994f15f7bcd9fbb.bindTooltip(
+                `<div>
+                     성균관대학교 서울캠퍼스  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7033403acd595db48aa0c9c1d3d43a2f = L.marker(
+                [37.5913103, 127.0221312],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_7033403acd595db48aa0c9c1d3d43a2f.bindTooltip(
+                `<div>
+                     성신여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf6f841b0fd1a911ac7a7d59480c4040 = L.marker(
+                [37.5502596, 127.073139],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_bf6f841b0fd1a911ac7a7d59480c4040.bindTooltip(
+                `<div>
+                     세종대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_274c0636cae1551540439fcadda86b07 = L.marker(
+                [37.5463644, 126.9648311],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_274c0636cae1551540439fcadda86b07.bindTooltip(
+                `<div>
+                     숙명여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_352d3a1e3cfb0b1f8c06c4ec4d8232ee = L.marker(
+                [37.4963111, 126.9574596],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_352d3a1e3cfb0b1f8c06c4ec4d8232ee.bindTooltip(
+                `<div>
+                     숭실대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e23b2f6037b8716243cd25e907a72714 = L.marker(
+                [37.565784, 126.938572],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_e23b2f6037b8716243cd25e907a72714.bindTooltip(
+                `<div>
+                     연세대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a495e5bcbb3002587d910777691b257 = L.marker(
+                [37.6238188, 127.0988783],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_6a495e5bcbb3002587d910777691b257.bindTooltip(
+                `<div>
+                     육군사관학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a255f7a8f003d7dc675a65ba48d84c7 = L.marker(
+                [37.5643079, 126.9501786],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_8a255f7a8f003d7dc675a65ba48d84c7.bindTooltip(
+                `<div>
+                     이화여자대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c46da0e769c0c39e062341637cfccce = L.marker(
+                [37.5505112, 127.1034577],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_4c46da0e769c0c39e062341637cfccce.bindTooltip(
+                `<div>
+                     장로회신학대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e533946a0d8a29fcfe7bc29b28cbf58b = L.marker(
+                [37.5050881, 126.9571012],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_e533946a0d8a29fcfe7bc29b28cbf58b.bindTooltip(
+                `<div>
+                     중앙대학교 서울캠퍼스 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a01a01493b6102ad8f0e7ea0744a28b8 = L.marker(
+                [37.4886232, 126.9668169],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_a01a01493b6102ad8f0e7ea0744a28b8.bindTooltip(
+                `<div>
+                     총신대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8b2be2f2358c1f36983881bc8bc811f = L.marker(
+                [37.5624515, 126.9534165],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_f8b2be2f2358c1f36983881bc8bc811f.bindTooltip(
+                `<div>
+                     추계예술대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c6ed677b27887398e70a2aa4778ff81 = L.marker(
+                [37.5786127, 127.0032905],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_9c6ed677b27887398e70a2aa4778ff81.bindTooltip(
+                `<div>
+                     한국방송통신대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8214225d4413f681b322eefb39e2e80a = L.marker(
+                [37.6487485, 127.0643199],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_8214225d4413f681b322eefb39e2e80a.bindTooltip(
+                `<div>
+                     한국성서대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35573e7b050721564ae4ac2749c0e4a1 = L.marker(
+                [37.6049973, 127.0567397],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_35573e7b050721564ae4ac2749c0e4a1.bindTooltip(
+                `<div>
+                     한국예술종합학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3deef14de6f1bf3b68ed393608268675 = L.marker(
+                [37.597319, 127.057843],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_3deef14de6f1bf3b68ed393608268675.bindTooltip(
+                `<div>
+                     한국외국어대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_46f1d67fea18a869ef2bf0854fda6000 = L.marker(
+                [37.5196266, 127.1309837],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_46f1d67fea18a869ef2bf0854fda6000.bindTooltip(
+                `<div>
+                     한국체육대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8de0f9d5611c533ccdfa7b1fc3835058 = L.marker(
+                [37.5817849, 127.010369],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_8de0f9d5611c533ccdfa7b1fc3835058.bindTooltip(
+                `<div>
+                     한성대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f1cc30ce4c6f711ef48683a0a3488b0b = L.marker(
+                [37.5572321, 127.0453219],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_f1cc30ce4c6f711ef48683a0a3488b0b.bindTooltip(
+                `<div>
+                     한양대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d03587c28defb5237a742c32e47f37b5 = L.marker(
+                [37.5514642, 126.9250106],
+                {
+}
+            ).addTo(map_5bf195236f7f42a77e241a2ebd2ab537);
+        
+    
+            marker_d03587c28defb5237a742c32e47f37b5.bindTooltip(
+                `<div>
+                     홍익대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
